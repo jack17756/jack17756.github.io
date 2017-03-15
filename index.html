@@ -3,27 +3,37 @@
   
 <style>
   body {
-    margin: 50px;
-    color: CMYK(0,0,0,76);
+    margin: 70px;
+    background-color: black;
   }
   
   h1 {
     color: white;
     font-family: "Helvetica", Arial;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 800;
   }
   
+  .left {
+    float: left;
+    width: 60%;
+    background-color: black;
+  }
+
+  .right {
+    float: right;
+    width: 40%;
+  }
+
   .line {
     size: 1.5px; 
     color: white; 
-    text-align: left;
-    width: 50%;
+    width: 100%;
   }
   
   .text {
-    color: CMYK(0,0,0,16); 
-    font-family: "Footlight MT Light", Times New Roman, Helvetica, Arial;
+    color: gray; 
+    font-family: "Footlight MT Light", Times, Helvetica, Arial;
     font-size: 1.1em; 
     line-height: 1.5em;
     text-align: left;
@@ -31,8 +41,28 @@
   }
   
   .link {
+    color: RGB(62,206,240);
+  }
+
+  /*this is the hover event trigger*/
+
+  .link:hover {
     text-decoration: none;
-    color: RGB(62,192,240);
+    color: RGB(62,176,240);
+  }
+
+  .middle {
+      text-align: left;
+      clear: both;
+    }
+
+  .discription {
+      color: gray; 
+      font-family: "Footlight MT Light", Times New Roman, Helvetica, Arial;
+      font-size: 1.1em; 
+      line-height: 1em;
+      text-align: left;
+      word-spacing: -1px;
   }
 
   
@@ -40,22 +70,21 @@
 </head>
 
 <body>
-  <div class="top">
-    <h1>JACK C. LIU</h1>
+  <div class="left">
+    <h1>JACK LIU</h1>
     <HR class="line"></HR>
       <p class="text">
-        Hi people! I am a current exchange student at Temple University, Philadelphia, PA, <br>
-        and now seeking for a bachelor degree at Fu Jen Catholic University, New Taipei City, Taiwan. <br>
-        I will mainly post the data story and reverse engineering projects I wrtie from my course - Data Journalism - on here! <br>
-        Previously, I was a multimedia journalist in <a href="https://vita.tw/"; class="link">Vita News</a>
-        and the chief editor of political News in <a href="http://hcnews.jcs.tw/"; class="link">Xinzhuang News</a>. <br>
-        Both media are embedded in the Department of Journalism and Communicaiton Studies,Fu Jen Catholic University.<br>
+        Hi people! <br>
+        I am a current exchange student at Temple University, Philadelphia, PA,
+        and now seeking for a bachelor degree at Fu Jen Catholic University, New Taipei City, Taiwan.
+        I will post the data stories and reverse engineering projects I wrtie from my course - Data Journalism - on here! Previously, I was a multimedia journalist in <a href="https://vita.tw/"; class="link">Vita News</a> and the chief editor of political News in <a href="http://hcnews.jcs.tw/"; class="link">Xinzhuang News</a>. Both media are embedded in the Department of Journalism and Communicaiton Studies, Fu Jen Catholic University.<br>
         Have fun coding!
       </p>
    </div>
-   <div>
-        <p>
-         <a href="https://jack17756.github.io/reverse_engineering_1/WAPO.html">Reverse Engineering 1</a>
-        </p>
+   <div class="right">
+   </div>
+   <div class="middle">
+         <a href="https://jack17756.github.io/reverse_engineering_1/WAPO.html"><img src="https://jack17756.github.io/gif/wapo.gif"; width="200"; height="130"></a>
+         <p class="discription">___Washington Post</p>
   </div>
 </body>
