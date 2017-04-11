@@ -1,11 +1,9 @@
 <head>
   <title>JACK C. LIU</title>
+
   
 <style>
-  body {
-    margin: 70px;
-    background-color: black;
-  }
+
   
   h1 {
     color: white;
@@ -16,13 +14,17 @@
   
   .left {
     float: left;
-    width: 60%;
-    background-color: black;
+    width: 40%;
+     margin: 80px;
   }
 
-  .right {
-    float: right;
-    width: 40%;
+  .top{
+  	position:absolute;
+  	top:0;
+  	left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: #181818;
   }
 
   .line {
@@ -30,7 +32,7 @@
     color: white; 
     width: 100%;
   }
-  
+
   .text {
     color: gray; 
     font-family: "Footlight MT Light", Times, Helvetica, Arial;
@@ -44,19 +46,17 @@
     text-decoration: none;
     color: RGB(62,206,240);
   }
-
   /*this is the hover event trigger*/
-
   .link:hover {
     text-decoration: none;
     color: RGB(62,176,240);
   }
-
   .middle {
-      text-align: left;
-      clear: both;
-    }
+  	margin-top:100vh;
+  	width:100%;
+    text-align: left;
 
+    }
   .discription {
       color: gray; 
       font-family: "Footlight MT Light", Times New Roman, Helvetica, Arial;
@@ -64,12 +64,13 @@
       line-height: 1em;
       text-align: left;
   }
+ 
 
-  
 </style>  
 </head>
 
 <body>
+<div class="top">
   <div class="left">
     <h1>JACK C. LIU</h1>
     <HR class="line"></HR>
@@ -84,8 +85,7 @@
         Have fun coding!
       </p>
    </div>
-   <div class="right">
-   </div>
+</div>
    <div class="middle">
          <a href="https://jack17756.github.io/reverse_engineering_1/WAPO.html"><img src="https://jack17756.github.io/gif/wapo.gif"; width="200"; height="130"></a>
          <p class="discription">WAPO</p>
