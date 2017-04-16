@@ -2,12 +2,13 @@
  	<title>When People Rise: Same-Sex Marriage in Progress in Taiwan
 	</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	
 	<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/maps/modules/map.js"></script>
     <script src="https://code.highcharts.com/mapdata/countries/tw/tw-all.js"></script>
 	<script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Hind|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind|Oswald" rel="stylesheet"></link>
 
 	
 
@@ -63,12 +64,7 @@
             margin:0 auto;
             margin-top: 40px;
         }
-
-        .image-judge {
-            max-width:120%;
-            margin:0 auto;
-        }
-
+        
         .sub-topic {
             font-family: 'Oswald', sans-serif;
             font-size: 1.8em;
@@ -110,26 +106,29 @@
         .judge-number {
             float: left;
             width: 19%;
-            margin-right: 1%;
+            margin-right: 5%;
             text-align: center;
         }
 
         .judge-number p {
-            font-size: 1em;
+            font-size: 1.1em;
             margin-top: -1px; 
             line-height: 1.3em;
+            font-family: 'Hind', sans-serif;
         }
 
         .number {
             font-size:60px;
         }
 
-        .agree {
-            color:red;
-        }
 
         .clear {
             clear:both;
+        }
+
+        .img-judge {
+            display: block;
+            margin: auto;
         }
 
         /*JavaScript*/
@@ -190,7 +189,8 @@
 	   </div>
 			<hr class="line"></hr>
 	</div>
-
+</div>
+<div class="wrapper-text">
 	<div id="middle-bottom">
 		<h1 class="sub-topic">
 			Views from the government on same-sex marriage
@@ -203,6 +203,7 @@
 			Among 15 justices in the Judicial Yuan in Taiwan, they can be divided into four broad categories that whether they are in favor of the Merriage Equality Bill:<br>
             <br>
 		</p>
+    </div>
         <div class="judge-number">
 			<p><span class="number" style="color: #90ED7D">3</span></p>
             <p class="agreement"  style="color: #90ED7D">Agree</p>
@@ -219,18 +220,18 @@
 			<p><span class="number" style="color: #7CB5EC">1</span></p> 
             <p class="agreement" style="color: #7CB5EC">Agree with condition</p>
 		</div>
-		<div class="image-judge" >
-        <img src="complete.svg"</img>      
-        </div>
-		<div class="sigle-text">
+</div>
+
+        <img src="complete.png" class="img-judge"></img>      
+
+<div class="wrapper-text">
+        <div class="sigle-text">
         <div class="clear"></div>
 		<p class="text">
 			Among 113 legislators in the Legislative Yuan, their attitudes toward Marriage-Equality Bill can be divided into three categories:
 		</p>
 		</div>
 		<div id="img-legislater-1" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
-	</div>
-
 	<div id="bottom">
 		<h1 class="sub-topic">
 			A closer look of the issue of AIDS
@@ -419,6 +420,7 @@ $(function () {
         credits: {
         	enabled: false,
         },
+        
         exporting: { 
         	enabled: false,
         },
